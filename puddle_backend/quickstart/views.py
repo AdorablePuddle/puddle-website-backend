@@ -17,7 +17,3 @@ def ping_response():
 @api_view(http_method_names = ["GET"])
 def ping(request : Request):
     return ping_response()
-
-@api_view(http_method_names = ["GET"])
-def get_question(request : Request):
-    question_number = request.query_params.get("")
